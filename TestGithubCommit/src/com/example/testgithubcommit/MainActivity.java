@@ -15,6 +15,7 @@ public class MainActivity extends Activity {
 		Log.d("MainAcitivity", "Branch 2");
 		Log.d("MainAcitivity", "Branch 3");
 		Log.d("MainAcitivity", "Branch 4");
+		Log.d("MainAcitivity", "Branch 5");
 	}
 
 	@Override
