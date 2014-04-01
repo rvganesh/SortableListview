@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff000000"
+    tools:context=".DragDropListView" >
+
+    <TextView
+        android:id="@+id/textMine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:text="@string/hello_world"
+        android:textColor="#ffffffff" />
+
+    <com.example.demodragdroplistview.widget.DragSortListView
+        xmlns:dslv="http://schemas.android.com/apk/res/com.example.demodragdroplistview"
+        android:id="@+id/simpleDragListview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/textMine"
+        android:layout_margin="0dp"
+        android:dividerHeight="1dp"
+        android:divider="#55ffffff"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:paddingTop="0dp"
+        dslv:collapsed_height="2dp"
+        dslv:drag_enabled="true"
+        dslv:drag_handle_id="@id/drag_handle"
+        dslv:drag_scroll_start="0.33"
+        dslv:drag_start_mode="onDown"
+        dslv:float_alpha="0.6"
+        dslv:max_drag_scroll_speed="0.5"
+        dslv:remove_enabled="true"
+        dslv:remove_mode="flingRemove"
+        dslv:slide_shuffle_speed="0.3"
+        dslv:sort_enabled="true"
+        dslv:track_drag_sort="false"
+        dslv:use_default_controller="true" />
+
+</RelativeLayout>
